@@ -1,0 +1,144 @@
+:root {
+  --html--bg--color: #DFE1E1;
+  --tituloFicha--fontFamily: "Cinzel", verdana;
+}
+
+body {
+  background-image: url("./assets/img/fondo2.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#circleProgress {
+  border: 1px solid black;
+  position: absolute;
+  z-index: 10;
+  background-color: var(--html--bg--color);
+}
+#circleProgress p {
+  font-family: var(--tituloFicha--fontFamily);
+}
+
+#header {
+  margin: 0px auto;
+  width: 50%;
+}
+#header img {
+  width: 100%;
+}
+
+.pokemons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.contenedorPokemon {
+  border: 2px solid black;
+  box-shadow: 5px 5px 5px 3px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  margin: 2%;
+}
+.contenedorPokemon h3 {
+  text-transform: uppercase;
+  font-size: 180%;
+  color: #464440;
+  font-family: var(--tituloFicha--fontFamily);
+  background-color: var(--containerPokemon--bg--color);
+}
+.contenedorPokemon img {
+  width: 30%;
+  position: relative;
+  background-color: var(--containerPokemon--bg--color);
+}
+
+.contenedorPokemon:hover img {
+  margin: 0 auto;
+  animation-name: saltarin;
+  animation-duration: 0.75s;
+  animation-iteration-count: infinite;
+}
+
+#mensajeError {
+  text-align: center;
+  color: red;
+  font-size: 1.2em;
+}
+
+#form {
+  width: 15%;
+  margin: 0px auto;
+  margin-top: 2%;
+  display: flex;
+  flex-direction: row;
+}
+#form input {
+  width: 100%;
+  height: 30px;
+  margin-right: 8%;
+  border: 2px solid black;
+  box-shadow: 2px 2px 3px 3px;
+  border-radius: 10px;
+  padding-left: 3%;
+  font-size: large;
+}
+
+.contenedorDetalle .detallePokemon {
+  background-image: url("./assets/img/fondoViejo2.jpg");
+  width: 550px;
+  margin: 0px auto;
+  border: 2px solid black;
+  box-shadow: 5px 5px 5px 3px;
+}
+.contenedorDetalle .detallePokemon #cabeceraDetalle .nombre {
+  text-align: center;
+  padding: 2%;
+}
+.contenedorDetalle .detallePokemon #cabeceraDetalle .nombre h3 {
+  margin: 9%;
+  display: inline;
+  font-family: var(--tituloFicha--fontFamily);
+  text-transform: uppercase;
+  font-size: 220%;
+  color: #fff9ed;
+  text-shadow: 0.1em 0.1em black;
+}
+.contenedorDetalle .detallePokemon #cabeceraDetalle img {
+  width: 50%;
+  background-image: url("./assets/img/fondo.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin-left: 25%;
+  border: 2px solid #f4a40e;
+  box-shadow: 5px 5px 5px 3px black;
+}
+.contenedorDetalle .detallePokemon #contenidoDetalle h4 {
+  text-transform: uppercase;
+  text-align: center;
+}
+.contenedorDetalle .detallePokemon #contenidoDetalle .abilitie {
+  background-color: #e8d5b1;
+  font-family: "Cinzel", verdana;
+  border: 1px solid black;
+  margin: 1%;
+  padding: 1%;
+}
+
+@keyframes saltarin {
+  from {
+    top: 0px;
+    animation-timing-function: ease-out;
+  }
+  50% {
+    top: -30px;
+    animation-timing-function: ease-out;
+  }
+  to {
+    top: 0px;
+  }
+}
+/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=index.scss.map */
+
+/*# sourceMappingURL=index.css.map */
