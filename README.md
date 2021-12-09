@@ -1,3 +1,5 @@
+This project show a app to get information about pokemon. This the data is obtained from the api from https://pokeapi.co/
+
 This project is working in https://pokedaw.herokuapp.com/
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
